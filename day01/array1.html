@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [99, 11, 22, 33, 44]
+        var arr1 = new Array(00, 11, 22, 33, 44)
+            // console.log(arr);
+            // console.log(arr1);
+
+        // 遍历数组
+        // arr.forEach(function(v, k) {
+        //     console.log(v, k) // k=索引 v=值
+        // })
+
+        // // 数组的常用属性与方法
+        // console.log(arr.length) //获取数组长度
+        // console.log(arr[arr.length - 1]) //获取最后一个小垃圾
+
+        // // 通过下标访问数组
+        // console.log(arr[1])
+
+        arr.push(55); //末尾添加
+        console.log(arr);
+
+        console.log("slice");
+        var res = arr.slice(0, 3) //数组的复制
+        console.log(res)
+
+        arr.pop() //末尾删除
+        console.log(arr)
+
+        arr.unshift(88) //头部添加
+        console.log(arr)
+
+        arr.shift() //头部删除
+        console.log(arr)
+
+        arr.splice(1, 1) //截取删除
+        console.log(arr)
+
+        arr.reverse() //倒叙
+        console.log(arr);
+
+        arr.sort() //从小到大排序
+        console.log(arr);
+    </script>
+</body>
+
+</html>
