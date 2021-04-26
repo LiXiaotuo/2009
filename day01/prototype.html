@@ -16,8 +16,10 @@
 
         // console.log(obj)
         // 定义一个构造函数
-        function Person() {
-
+        function Person(name, sex, age) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
         }
 
         Person.prototype.name = "noname"
@@ -35,6 +37,9 @@
         console.log(p2.name)
         console.log(p2.sex)
         console.log(p2.sex)
+
+        var p3 = new Person("lixiaotuo", 18, "男")
+        console.log(p3)
     </script>
 </body>
 
